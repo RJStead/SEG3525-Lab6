@@ -1,0 +1,57 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+	<h2>Names</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+		<%if (results[0][i].name) {%>
+			<li><%= results[0][i].name %> :  <%= results[0][i].count %></li>
+		<% } %>  
+    <% } %>    
+    </ul>
+	<h2>Country</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <%if (results[0][i].country) {%>
+			<li><%= results[0][i].country %> :  <%= results[0][i].count %></li>
+		<% } %> 
+    <% } %>    
+    </ul>
+	<h2>Siblings</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <%if (results[0][i].siblings) {%>
+			<li><%= results[0][i].siblings %> :  <%= results[0][i].count %></li>
+		<% } %> 
+    <% } %>    
+    </ul>
+	<h2>Animals</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <%if (results[0][i].animal) {%>
+			<li><%= results[0][i].animal %> :  <%= results[0][i].count %></li>
+		<% } %> 
+    <% } %>    
+    </ul>
+    <h2>Colors</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <%if (results[0][i].color) {%>
+			<li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
+		<% } %> 
+    <% } %>    
+    </ul>
+	<h2>Social Media</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <%if (results[0][i].social) {%>
+			<li><%= results[0][i].social %> :  <%= results[0][i].count %></li>
+		<% } %> 
+    <% } %>    
+    </ul>
+</body>
+</html>

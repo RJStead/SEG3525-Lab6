@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	<div class="container-md p-1 bg-primary text-white">
+	<div class="container-md p-3 my-3 bg-dark text-white" id="survey">
+    <h1 style="text-align:center;">Survey</h1>
+    <form>
+	  <div class="container-md p-3 bg-secondary">
+		  <h2> What is your first name? </h2>
+		  <input type="text" name="name" placeholder="First name..." required />
+	  </div>
+      <br>
+	  <div class="container-md p-3 bg-secondary">
+		  <h2> What country are you from? </h2>
+		  <input type="text" name="country" placeholder="Country..." required />
+	  </div>
+      <br>
+	  <div class="container-md p-3 bg-secondary">
+		<h2>How many siblings do you have?</h2>
+		  <input type="radio" name="siblings" value="0" required> 0<br>
+		  <input type="radio" name="siblings" value="1"> 1<br>
+		  <input type="radio" name="siblings" value="2-3"> 2-3<br>
+		  <input type="radio" name="siblings" value="4-6"> 4-6<br>
+		  <input type="radio" name="siblings" value="7+"> 7+<br>
+	  </div>
+	  <br>
+	  <div class="container-md p-3 bg-secondary">
+		  <h2>What is your favorite animal?</h2>
+		  <select name="animal">
+				  <option value="Cat" selected="selected">Cat</option>
+				  <option value="Dog">Dog</option>
+				  <option value="Turtle">Turtle</option>
+				  <option value="Rabbit">Rabbit</option>
+				  <option value="Lizard">Lizard</option>
+				  <option value="Tiger">Tiger</option>
+		  </select>
+	  </div>
+      <br>
+	  <div class="container-md p-3 bg-secondary">
+		<h2> Which color(s) do you like? </h2>
+		<input type="checkbox" name="color" value="Red"> Red<br>
+		<input type="checkbox" name="color" value="Orange"> Orange<br>
+		<input type="checkbox" name="color" value="Yellow"> Yellow<br>
+		<input type="checkbox" name="color" value="Green"> Green<br>
+		<input type="checkbox" name="color" value="Blue"> Blue<br>
+		<input type="checkbox" name="color" value="Purple"> Purple<br>
+		<input type="checkbox" name="color" value="Pink"> Pink<br>
+	  </div>
+	  <br>
+	  <div class="container-md p-3 bg-secondary">
+		<h2>What is your favorite social media?</h2>
+		  <input type="radio" name="social" value="Facebook" required> Facebook<br>
+		  <input type="radio" name="social" value="Instagram"> Instagram<br>
+		  <input type="radio" name="social" value="Twitter"> Twitter<br>
+		  <input type="radio" name="social" value="TikTok"> TikTok<br>
+	  </div>
+	  <br>
+	  <div>
+		  <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+		  <p id="thanks"></p>
+	  </div>
+	  </div>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
